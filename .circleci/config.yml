@@ -9,7 +9,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: ../mvn package
+      - run: ../lab_1_3_JUnit_Mockito mvn package
 
 # orbs: 
 #   maven: circleci/maven@1.3.0
