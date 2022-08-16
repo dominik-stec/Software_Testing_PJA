@@ -11,7 +11,7 @@ jobs:
     - run:
         command: |
           git config --global user.email "dccstcc@gmail.com"
-          git config --global user.name "CircleCI"
+          git config --global user.name "dccstcc"
     - run: ./doc/ci-docs.sh
 
   # Run unit tests
