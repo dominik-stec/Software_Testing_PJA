@@ -33,7 +33,8 @@ jobs:
       - run:
           name: Save test results
           command: |
-            mkdir -p ~/test-results/junit/
+            # mkdir -p ~/test-results/junit/
+            mkdir -p ~/
             find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} ~/test-results/junit/ \;
           when: always
 
