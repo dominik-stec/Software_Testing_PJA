@@ -25,6 +25,7 @@ jobs:
           at: . # relative path to our working directory
       - run: 
           command: |
+              ls -la ~/project
               ls -la ../../bin/bash
               cd ../../ && whereis Dockerfile
               echo $pwd
