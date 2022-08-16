@@ -4,9 +4,9 @@ version: 2.1
 workflows:
   maven_test:
     jobs:
-      working_directory: ../lab_1_3_JUnit_Mockito
+      - working_directory: '../lab_1_3_JUnit_Mockito'
       - maven/test:
-          command: '../lab_1_3_JUnit_Mockito/-X clean'
+          command: '-X clean'
 
 # Define the jobs we want to run for this project
 # jobs:
