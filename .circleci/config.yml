@@ -1,34 +1,140 @@
 version: 2
+
 jobs:
-  build:
-    working_directory: /lab_1_3_JUnit_Mockito/
-
+  # Build Website
+  doc:
+    working_directory: ~/dccstcc/dmp-docs
     docker:
-      - image: circleci/openjdk:8-jdk-stretch
-
+    - image: circleci/openjdk:11
     steps:
-      - checkout
+    - checkout
+    - run:
+        command: |
+          git config --global user.email "dccstcc@gmail.com"
+          git config --global user.name "CircleCI"
+    - run: ./doc/ci-docs.sh
 
-      - run:
-          name: Generate cumulative pom.xml checksum
-          command: |
-            find . -type f -name "pom.xml" -exec sh -c "sha256sum {} >> ~/pom-checksum.tmp" \;
-            sort -o ~/pom-checksum ~/pom-checksum.tmp
-          when: always
+  # Run unit tests
+  build:
+    working_directory: ~/dccstcc/docker-maven-plugin
+    docker:
+    - image: circleci/openjdk:11
+    steps:
+    - checkout
+    - restore_cache:
+        key: dmp-{{ checksum "pom.xml" }}
+    - run: mvn install -Pjacoco
+    - run: bash <(curl -s https://codecov.io/bash)
+    - save_cache:
+        key: dmp-{{ checksum "pom.xml" }}
+        paths:
+        - ~/.m2
 
-      - restore_cache:
-          keys:
-            - my-multi-module-mvn-prj-{{ checksum "~/pom-checksum" }}
-            - my-multi-module-mvn-prj-
+  # Run integration tests
+  e2e-tests:
+    working_directory: ~/dccstcc/docker-maven-plugin
+    machine: true
+    steps:
+    - checkout
+    - restore_cache:
+        key: dmp-{{ checksum "pom.xml" }}
+    - run:
+        command: |
+          mvn clean install -DskipTests
+          cd it/
+          mvn clean install
+    - save_cache:
+        key: dmp-{{ checksum "pom.xml" }}
+        paths:
+        - ~/.m2
 
-      - run: mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies
+  sonar-pr:
+    working_directory: ~/dccstcc/dmp-sonar-pr
+    docker:
+    - image: circleci/openjdk:11
+    steps:
+    - checkout
+    - restore_cache:
+        key: dmp-sonar-pr-{{ checksum "pom.xml" }}
+    - run: |
+        if [ -n "${CIRCLE_PR_NUMBER}" ]; then
+          mvn clean -Pjacoco,sonar org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
+             -Dsonar.pullrequest.base=master \
+             -Dsonar.pullrequest.branch=${CIRCLE_BRANCH} \
+             -Dsonar.pullrequest.key=${CIRCLE_PR_NUMBER} \
+             -Dsonar.pullrequest.provider=GitHub \
+             -Dsonar.pullrequest.github.repository=fabric8io/docker-maven-plugin \
+             -Dsonar.github.oauth=${GITHUB_COMMENT_TOKEN}
+        else
+          echo "No Sonar PR analysis as this is not a pull request"
+        fi
+    - save_cache:
+        key: dmp-sonar-pr-{{ checksum "pom.xml" }}
+        paths:
+        - ~/.m2
 
-      - save_cache:
-          paths:
-            - ~/.m2
-          key: my-multi-module-mvn-prj-{{ checksum "~/pom-checksum" }}
+  sonar:
+    working_directory: ~/dccstcc/dmp-sonar
+    docker:
+    - image: circleci/openjdk:11
+    steps:
+    - checkout
+    - restore_cache:
+        key: dmp-sonar-{{ checksum "pom.xml" }}
+    - run: |
+        mvn clean -Pjacoco,sonar org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+    - save_cache:
+        key: dmp-sonar-{{ checksum "pom.xml" }}
+        paths:
+        - ~/.m2
 
-      - run: mvn package
+workflows:
+  version: 2
+  all:
+    jobs:
+    - doc:
+        filters:
+          branches:
+            only: dmp.fabric8.io
+    - build
+    - e2e-tests
+    - sonar-pr
+    - sonar:
+        filters:
+          branches:
+            only: master
+
+# version: 2
+# jobs:
+#   build:
+#     working_directory: /lab_1_3_JUnit_Mockito/
+
+#     docker:
+#       - image: circleci/openjdk:8-jdk-stretch
+
+#     steps:
+#       - checkout
+
+#       - run:
+#           name: Generate cumulative pom.xml checksum
+#           command: |
+#             find . -type f -name "pom.xml" -exec sh -c "sha256sum {} >> ~/pom-checksum.tmp" \;
+#             sort -o ~/pom-checksum ~/pom-checksum.tmp
+#           when: always
+
+#       - restore_cache:
+#           keys:
+#             - my-multi-module-mvn-prj-{{ checksum "~/pom-checksum" }}
+#             - my-multi-module-mvn-prj-
+
+#       - run: mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies
+
+#       - save_cache:
+#           paths:
+#             - ~/.m2
+#           key: my-multi-module-mvn-prj-{{ checksum "~/pom-checksum" }}
+
+#       - run: mvn package
 
       # - run:
       #     name: Save test results
@@ -41,8 +147,8 @@ jobs:
       # - store_test_results:
       #     path: ~/test-results
 
-      - store_artifacts:
-          path: my-service/target/my-service.jar
+      # - store_artifacts:
+      #     path: my-service/target/my-service.jar
 
 # # This code is licensed from CircleCI to the user under the MIT license.
 # # See here for details: https://circleci.com/developer/orbs/licensing
