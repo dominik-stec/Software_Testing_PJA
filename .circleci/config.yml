@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run: 
           command: |
-              cd ~/lab_1_3_JUnit_Mockito
+              cd ../lab_1_3_JUnit_Mockito
               mvn clean package
   test:
     docker:
@@ -31,7 +31,7 @@ jobs:
       - checkout
       - run: 
           command: |
-              cd ~/lab_1_3_JUnit_Mockito
+              cd ../lab_1_3_JUnit_Mockito
               mvn test
 
 # Orchestrate our job run sequence
