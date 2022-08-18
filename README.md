@@ -99,6 +99,7 @@ Bottom links describe each technology I used for test code in projected software
 Docker for build images is required. <br />
 JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
+Maven project management library is need. <br />
 
 ### Projects
 
