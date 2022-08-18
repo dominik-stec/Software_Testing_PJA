@@ -34,7 +34,7 @@
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -96,7 +96,7 @@ Bottom links describe each technology I used for test code in projected software
 ### Prerequisites
 
 Docker for build images is required. <br />
-JUnit unit test framework Java is need. <br />
+JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
 
 ### Projects
