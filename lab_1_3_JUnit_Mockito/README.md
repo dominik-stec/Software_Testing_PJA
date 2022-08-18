@@ -22,7 +22,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
 
-### circleCI:
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dccstcc/TAU_PJATK_practice)
 
 <!-- PROJECT LOGO -->
@@ -81,7 +80,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I use different technologies for test software. </p>
+<p> In this project I tested different cars marks factory. I used JUnit library for unit tests and Mockito library for mocking dependencies in cars factory. Project is maintain by Maven build tools. This tests run by Docker images. </p>
 
 ### Built With
 
@@ -89,6 +88,7 @@ This project use technology below.
 * [![docker][docker-shield]][docker-url]
 * [![junit][junit-shield]][junit-url]
 * [![mockito][mockito-shield]][mockito-url]
+* [![maven][maven-shield]][maven-url]
 
 
 <!-- GETTING STARTED -->
@@ -101,6 +101,7 @@ Bottom links describe each technology I used for test code in projected software
 Docker for build images is required. <br />
 JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
+Apache Maven project build tools is need. <br />
 
 ### Projects
 
@@ -161,7 +162,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`[https://github.com/dccstcc/TAU_PJATK_practice.git](https://github.com/dccstcc/TAU_PJATK_practice/edit/master/lab_1_3_JUnit_Mockito/)`
 
 
 
@@ -205,4 +206,6 @@ Project URL:
 [mockito-url]: https://site.mockito.org/
 [docker-shield]: https://img.shields.io/badge/-Docker-blue
 [docker-url]: https://www.docker.com/
+[maven-shield]: https://img.shields.io/badge/-Maven-white
+[maven-url]: https://maven.apache.org/
 
