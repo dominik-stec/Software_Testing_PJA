@@ -86,6 +86,7 @@ This project use technology below.
 * [![docker][docker-shield]][docker-url]
 * [![junit][junit-shield]][junit-url]
 * [![mockito][mockito-shield]][mockito-url]
+* [![maven][maven-shield]][maven-url]
 
 
 <!-- GETTING STARTED -->
@@ -202,4 +203,5 @@ Project URL:
 [mockito-url]: https://site.mockito.org/
 [docker-shield]: https://img.shields.io/badge/-Docker-blue
 [docker-url]: https://www.docker.com/
-
+[maven-shield]: https://img.shields.io/badge/-Maven-white
+[maven-url]: https://maven.apache.org/
