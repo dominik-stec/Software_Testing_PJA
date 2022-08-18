@@ -202,7 +202,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`[https://github.com/dccstcc/TAU_PJATK_practice.git](https://github.com/dccstcc/TAU_PJATK_practice/edit/master/lab_1_3_JUnit_Mockito/)`
+`https://github.com/dccstcc/TAU_PJATK_practice.git`
 
 
 
