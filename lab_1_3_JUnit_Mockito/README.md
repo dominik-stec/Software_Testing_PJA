@@ -63,7 +63,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -94,7 +94,8 @@ This project use technology below.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Bottom links describe each technology I used for test code in projected software.
+This is instructions on setting up this project locally.
+
 
 ### Prerequisites
 
@@ -103,7 +104,26 @@ JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
 Apache Maven project build tools is need. <br />
 
-### Projects
+* Docker
+  ```sh
+  sudo apt-get install docker-engine -y
+  sudo service docker start
+  ```
+* Maven
+   ```sh
+  wget http://www.apache.org/dist//maven/binaries/apache-maven-3.0.3-bin.tar.gz
+  tar -zxvf apache-maven-3.0.3-bin.tar.gz
+  nano .bashrc
+  ```
+  into .bashrc on the end of file paste:
+  ```sh
+  export M2_HOME=/opt/apache-maven-3.0.3
+  export PATH=${M2_HOME}/bin:${PATH}
+  ```
+  hit Ctrl+O to save <br />
+  hit Ctrl+X to exit
+
+### Installation
 
 1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito) 
 
