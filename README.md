@@ -29,12 +29,12 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">BIU_PJATK</h2>
+  <h2 align="center">TAU_PJATK_practice</h2>
 
   <p align="center">
-    Rich Interfaces of User subject in PJATK
+    <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/BIU_PJATK"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -61,7 +61,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -78,57 +78,43 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-In this project I realise Single Page Application with Angular in version 5. SPA module is representation of user authorization process with field content control against throws exceptions caused wrong keybord typing.
+<p> In this project I use different technologies for test software. </p>
 
 ### Built With
 
 This project use technology below.
-* [![Bootstrap][bootstrap-shield]][bootstrap-url]
-* [![Angular][angular-shield]][angular-url]
+* [![docker][docker-shield]][docker-url]
+* [![junit][junit-shield]][junit-url]
+* [![mockito][mockito-shield]][mockito-url]
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is instructions on setting up this project locally.
+Bottom links describe each technology I used for test code in projected software.
 
 ### Prerequisites
 
-NodeJS framework is required.
-Angular CLI package intall with Node Package Manager is need.
-Angular devkit package intall with Node Package Manager is need.
-* npm
-  ```sh
-  npm install -g @angular/cli
-  npm install --save-dev @angular-devkit/build-angular
-  ```
+Docker for build images is required. <br />
+JUnit unit test framework Java is need. <br />
+Mockito framework for use in JUnit stubs/mocks is need. <br />
 
-### Installation
+### Projects
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/dccstcc/BIU_PJATK.git
-   ```
-2. Go to folder with Angular sources
-   ```sh
-   cd AngularFolder
-   ```
-3. Build and run sources with Angular CLI
-   ```sh
-   ng serve
-   ```
-4. Run project in web browser
-   Default adress set in framewrok is:
-   [https://localhost:4200/](https://localhost:4200/)
+1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/lab_1_3_junit_mockito/) 
+
+2. Cucumber
+
+3. next
+
+4. next
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-As first we need to register user in system use fields with personal user data. Unappropriate entries are detected and user will see typing error. After user registration process we can sign into service with given user name and password.
+Under specified links are instructions which describe solutions how to use chose test technology.
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -172,7 +158,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`https://github.com/dccstcc/BIU_PJATK.git`
+`https://github.com/dccstcc/TAU_PJATK_practice.git`
 
 
 
@@ -210,8 +196,10 @@ Project URL:
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
 
-[angular-shield]: https://img.shields.io/badge/-Angular-red
-[angular-url]: https://angular.io/
-[bootstrap-shield]: https://img.shields.io/badge/-Bootstrap-blue
-[bootstrap-url]: https://getbootstrap.com/
+[junit-shield]: https://img.shields.io/badge/-JUnit-green
+[junit-url]: https://junit.org/junit5/
+[mockito-shield]: https://img.shields.io/badge/-Mockito-red
+[mockito-url]: https://site.mockito.org/
+[docker-shield]: https://img.shields.io/badge/-Docker-blue
+[docker-url]: https://www.docker.com/
 
