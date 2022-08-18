@@ -101,7 +101,7 @@ Mockito framework for use in JUnit stubs/mocks is need. <br />
 
 ### Projects
 
-1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/lab_1_3_junit_mockito/) 
+1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito) 
 
 2. Cucumber
 
