@@ -125,20 +125,40 @@ Apache Maven project build tools is need. <br />
 
 ### Installation
 
-1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito) 
+1. Clone the repo
+   ```sh
+   git clone https://github.com/dccstcc/TAU_PJATK_practice.git
+   ```
+2. Go to folder with Maven project sources
+   ```sh
+   cd lab_1_3_JUnit_Mockito
+   ```
+3. Build Docker image
+   ```sh
+   docker build --tag docker_tests .
+   ```
+4. Run Docker image
+   ```sh
+   docker run -it docker_tests
+   ```
+5. Run tests using Maven
+   ```sh
+   mvn test
+   ```
 
-2. Cucumber
-
-3. next
-
-4. next
-
+[![build_docker_image][build]][build]
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Under specified links are instructions which describe solutions how to use chose test technology.
+After hit command
+   ```sh
+   mvn test
+   ```
+it is posiible to verify number of tests and check if test pass or fail into command line output.
+
+[![run_docker_image][run]][run]
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -228,4 +248,8 @@ Project URL:
 [docker-url]: https://www.docker.com/
 [maven-shield]: https://img.shields.io/badge/-Maven-white
 [maven-url]: https://maven.apache.org/
+
+[build]: images/build.png
+[run]: images/run.png
+
 
