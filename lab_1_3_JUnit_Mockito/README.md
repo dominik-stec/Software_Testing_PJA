@@ -1,3 +1,6 @@
+# Example:
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dccstcc/TAU_PJATK_practice)
+
 PJATK_TAU_TransportMachines
 
 PJATK subject laboratory about automation of testing
