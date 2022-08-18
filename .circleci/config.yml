@@ -49,7 +49,7 @@ jobs:
         - ~/.m2
 
   run_tests:
-      working_directory: /TAU_PJATK_practice/
+      # working_directory: /TAU_PJATK_practice/
 
       docker:
       - image: circleci/openjdk:11
