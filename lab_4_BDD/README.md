@@ -36,7 +36,7 @@
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_4_BDD"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -100,11 +100,6 @@ This is instructions on setting up this project locally.
 Cucumber framework for BDD tests is need. <br />
 Apache Maven project build tools is need. <br />
 
-* Docker
-  ```sh
-  sudo apt-get install docker-engine -y
-  sudo service docker start
-  ```
 * Maven
    ```sh
   wget http://www.apache.org/dist//maven/binaries/apache-maven-3.0.3-bin.tar.gz
@@ -127,22 +122,14 @@ Apache Maven project build tools is need. <br />
    ```
 2. Go to folder with Maven project sources
    ```sh
-   cd lab_1_3_JUnit_Mockito
+   cd lab_4_BDD
    ```
-3. Build Docker image
-   ```sh
-   docker build --tag docker_tests .
-   ```
-4. Run Docker image
-   ```sh
-   docker run -it docker_tests
-   ```
-5. Run tests using Maven
+3. Run tests using Maven
    ```sh
    mvn test
    ```
 
-[![build_docker_image][build]][build]
+[![test_summary][test_summary]][test_summary]
 
 
 <!-- USAGE EXAMPLES -->
@@ -152,9 +139,9 @@ After hit command
    ```sh
    mvn test
    ```
-it is posiible to verify number of tests and check if test pass or fail into command line output.
+it is posiible to verify description of Behaviour Driven Development tests into command line output.
 
-[![run_docker_image][run]][run]
+[![test_description][test_description]][test_description]
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -183,9 +170,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-This project has not a license.
-All rights are reserved and it is not Open Source or Free. You cannot modify or redistribute this code without explicit permission from the copyright holder.
-See `LICENSE` for more information.
+This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder. Because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
 
 
 
@@ -247,7 +232,7 @@ Project URL:
 [cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
 [cucumber-url]: https://cucumber.io/
 
-[build]: images/build.png
-[run]: images/run.png
+[test_description]: images/test_description.png
+[test_summary]: images/test_summary.png
 
 

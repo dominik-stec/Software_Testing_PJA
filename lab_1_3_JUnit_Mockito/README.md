@@ -36,7 +36,7 @@
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito/"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -187,9 +187,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-This project has not a license.
-All rights are reserved and it is not Open Source or Free. You cannot modify or redistribute this code without explicit permission from the copyright holder.
-See `LICENSE` for more information.
+This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder. Because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
 
 
 
