@@ -13,7 +13,7 @@
  	
  		<!-- BDD cucumber -->
  		<!-- downgrade from 5.0.0 to 2.3.1 -->
- 		<cucumber.version>2.3.1</cucumber.version>
+ 		<cucumber.version>7.6.0</cucumber.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
         <!-- required for TravisCi interpreter -->
@@ -23,6 +23,15 @@
  	</properties>
  	 
   <dependencies>
+  
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.6</version>
+    <scope>provided</scope>
+</dependency>
+
   		
   		<!-- BDD -->
   		<dependency>
