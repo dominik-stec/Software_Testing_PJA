@@ -80,14 +80,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I tested different cars marks factory. I used JUnit library for unit tests and Mockito library for mocking dependencies in cars factory. Project is maintain by Maven build tools. This tests run by Docker images. </p>
+<p> In this project I tested in Behaviour Driven Development metodology with Cucumber framework. I tested car factory project. </p>
 
 ### Built With
 
 This project use technology below.
-* [![docker][docker-shield]][docker-url]
-* [![junit][junit-shield]][junit-url]
-* [![mockito][mockito-shield]][mockito-url]
+* [![cucumber][cucumber-shield]][cucumber-url]
 * [![maven][maven-shield]][maven-url]
 
 
@@ -99,9 +97,7 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-Docker for build images is required. <br />
-JUnit unit test framework for Java is need. <br />
-Mockito framework for use in JUnit stubs/mocks is need. <br />
+Cucumber framework for BDD tests is need. <br />
 Apache Maven project build tools is need. <br />
 
 * Docker
@@ -248,6 +244,8 @@ Project URL:
 [docker-url]: https://www.docker.com/
 [maven-shield]: https://img.shields.io/badge/-Maven-white
 [maven-url]: https://maven.apache.org/
+[cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
+[cucumber-url]: https://cucumber.io/
 
 [build]: images/build.png
 [run]: images/run.png
