@@ -80,7 +80,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I tested in Behaviour Driven Development metodology with Cucumber framework. I tested car factory project. </p>
+<p> In this project I tested in Behaviour Driven Development methodology with Cucumber framework. I tested car factory project. </p>
 
 ### Built With
 
