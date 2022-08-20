@@ -151,7 +151,7 @@ Eclipse Jetty server with web container is need. <br />
    ```
 
 
-[![server_run][server_run]][server_run]|width=50
+[![server_run][server_run]][server_run]
 
 [![client_run][client_run]][client_run]
 
@@ -289,7 +289,7 @@ Project URL:
 [jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
 [jmeter-url]: https://jmeter.apache.org/
 
-[server_run]: images/server_run.png
+[server_run]: images/server_run.png|width=50
 [client_run]: images/client_run.png
 [client]: images/client.png
 [jetty_run]: images/jetty_run.png
