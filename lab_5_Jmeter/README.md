@@ -150,15 +150,15 @@ Eclipse Jetty server with web container is need. <br />
    mv hsqldb.jar ./apache-jmeter-5.2.1/lib/ 
    ```
 
+ <img src="images/server_run.png" width="500"/>
 
-[![server_run][server_run]][server_run]
+<!-- [![server_run][server_run]][server_run] -->
 
-<!-- [![client_run][client_run]][client_run]
- -->
- 
- <img src="images/client_run.png" width="500"/>
+[![client_run][client_run]][client_run]
 
-[![client][client]][client]
+<img src="images/client.png" width="500"/>
+
+<!-- [![client][client]][client] -->
 
 
 
