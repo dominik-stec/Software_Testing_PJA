@@ -52,7 +52,7 @@ run ->
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_4_BDD"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_5_Jmeter"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -116,7 +116,7 @@ This is instructions on setting up this project locally.
 
 JMeter framework to load test functional behavior and measure performance is need. <br />
 Apache Maven project build tools is need. <br />
-Eclipse Jetty server and web container is need. <br />
+Eclipse Jetty server with web container is need. <br />
 
 * Maven
    ```sh
@@ -131,8 +131,8 @@ Eclipse Jetty server and web container is need. <br />
   export M2_HOME=~/maven/apache-maven-3.8.6/bin/
   export PATH=${M2_HOME}/bin:${PATH}
   ```
-  hit Ctrl+O to save <br />
-  hit Ctrl+X to exit
+  hit `Ctrl+O` to save <br />
+  hit `Ctrl+X` to exit
 
 ### Installation
 
@@ -168,7 +168,12 @@ Eclipse Jetty server and web container is need. <br />
    ```
 
 
-[![test_summary][test_summary]][test_summary]
+[![server_run][server_run]][server_run]
+
+[![client_run][client_run]][client_run]
+
+[![client][client]][client]
+
 
 
 <!-- USAGE EXAMPLES -->
@@ -179,16 +184,24 @@ Run rest api service built with cooperation with HsqlDB database and Jetty web c
    mvn jetty:run
    ```
 
+[![jetty_run][jetty_run]][jetty_run]
+
+
 In browser go to url 0.0.0.0/api:8080 and check if it is the same url like display after execute command  
    ```sh
    mvn jetty:run
    ```
+   
+[![browser][browser]][browser]
+
 
 Next step is to run the Jmeter framework with rest api server url and Jmeter config file
    ```sh
    cd ./apache-jmeter-5.2.1/
    ./jmeter -n -t ../../TAU_lab4_JMeter.jmx -l log.jtl -H 0.0.0.0/api -P 8080
    ```
+
+[![summary][summary]][summary]
 
 After run tests into command line output it is possible to see summary of measurements regarding efficiency.
 
@@ -199,9 +212,6 @@ Now we can exit database server by use server PID system number
    ```sh
    kill #PID#
    ```
-
-
-[![test_description][test_description]][test_description]
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -291,8 +301,17 @@ Project URL:
 [maven-url]: https://maven.apache.org/
 [cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
 [cucumber-url]: https://cucumber.io/
+[jetty-shield]: https://img.shields.io/badge/-Jetty-red
+[jetty-url]: https://www.eclipse.org/jetty/
+[jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
+[jmeter-url]: https://jmeter.apache.org/
 
-[test_description]: images/test_description.png
-[test_summary]: images/test_summary.png
+[server_run]: images/server_run.png
+[client_run]: images/client_run.png
+[client]: images/client.png
+[jetty_run]: images/jetty_run.png
+[browser]: images/browser.png
+[summary]: images/summary.png
+
 
 
