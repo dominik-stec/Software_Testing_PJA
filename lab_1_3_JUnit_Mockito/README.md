@@ -111,13 +111,15 @@ Apache Maven project build tools is need. <br />
   ```
 * Maven
    ```sh
-  wget http://www.apache.org/dist//maven/binaries/apache-maven-3.0.3-bin.tar.gz
-  tar -zxvf apache-maven-3.0.3-bin.tar.gz
+  mkdir ~/maven
+  cd ~/maven
+  https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+  tar xzvf apache-maven-3.8.6-bin.tar.gz
   nano .bashrc
   ```
   into .bashrc on the end of file paste:
   ```sh
-  export M2_HOME=/opt/apache-maven-3.0.3
+  export M2_HOME=~/maven/apache-maven-3.8.6/bin/
   export PATH=${M2_HOME}/bin:${PATH}
   ```
   hit Ctrl+O to save <br />
