@@ -151,7 +151,7 @@ Eclipse Jetty server with web container is need. <br />
    ```
 
 
-[![server_run][server_run]][server_run|width=100]
+[![server_run][server_run|width=100]][server_run]
 
 [![client_run][client_run]][client_run]
 
