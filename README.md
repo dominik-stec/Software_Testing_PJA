@@ -89,6 +89,7 @@ This project use technology below.
 * [![junit][junit-shield]][junit-url]
 * [![mockito][mockito-shield]][mockito-url]
 * [![maven][maven-shield]][maven-url]
+* [![cucumber][cucumber-shield]][cucumber-url]
 
 
 <!-- GETTING STARTED -->
@@ -207,3 +208,6 @@ Project URL:
 [docker-url]: https://www.docker.com/
 [maven-shield]: https://img.shields.io/badge/-Maven-white
 [maven-url]: https://maven.apache.org/
+
+[cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
+[cucumber-url]: https://cucumber.io/
