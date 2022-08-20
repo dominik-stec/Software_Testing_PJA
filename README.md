@@ -90,6 +90,8 @@ This project use technology below.
 * [![mockito][mockito-shield]][mockito-url]
 * [![maven][maven-shield]][maven-url]
 * [![cucumber][cucumber-shield]][cucumber-url]
+* [![jmeter][jmeter-shield]][jmeter-url]
+* [![jetty][jetty-shield]][jetty-url]
 
 
 <!-- GETTING STARTED -->
@@ -211,3 +213,7 @@ Project URL:
 
 [cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
 [cucumber-url]: https://cucumber.io/
+[jetty-shield]: https://img.shields.io/badge/-Jetty-red
+[jetty-url]: https://www.eclipse.org/jetty/
+[jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
+[jmeter-url]: https://jmeter.apache.org/
