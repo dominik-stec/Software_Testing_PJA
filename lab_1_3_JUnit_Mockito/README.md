@@ -148,7 +148,8 @@ Apache Maven project build tools is need. <br />
    mvn test
    ```
 
-[![build_docker_image][build]][build]
+<img src="images/build.png" width="500"/>
+<!-- [![build_docker_image][build]][build] -->
 
 
 <!-- USAGE EXAMPLES -->
@@ -160,7 +161,8 @@ After hit command
    ```
 it is posiible to verify number of tests and check if test pass or fail into command line output.
 
-[![run_docker_image][run]][run]
+<!-- [![run_docker_image][run]][run] -->
+<img src="images/run.png" width="500"/>
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
