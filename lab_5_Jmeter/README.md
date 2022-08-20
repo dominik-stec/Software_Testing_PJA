@@ -84,7 +84,7 @@
 ### Built With
 
 This project use technology below.
-[<img src="server_run" width="250"/>]
+[<img src="images/server_run.png" width="250"/>]
 * [![jmeter][jmeter-shield]][jmeter-url]
 * [![maven][maven-shield]][maven-url]
 * [![jetty][jetty-shield]][jetty-url]
