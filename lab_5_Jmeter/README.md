@@ -150,11 +150,13 @@ Eclipse Jetty server with web container is need. <br />
    mv hsqldb.jar ./apache-jmeter-5.2.1/lib/ 
    ```
 
-<img src="images/server_run.png" width="400"/>
 
-<!-- [![server_run][server_run]][server_run] -->
+[![server_run][server_run]][server_run]
 
-[![client_run][client_run]][client_run]
+<!-- [![client_run][client_run]][client_run]
+ -->
+ 
+ <img src="images/client_run.png" width="500"/>
 
 [![client][client]][client]
 
@@ -168,7 +170,9 @@ Run rest api service built with cooperation with HsqlDB database and Jetty web c
    mvn jetty:run
    ```
 
-[![jetty_run][jetty_run]][jetty_run]
+ <img src="images/jetty_run.png" width="500"/>
+
+<!-- [![jetty_run][jetty_run]][jetty_run] -->
 
 
 In browser go to url 0.0.0.0/api:8080 and check if it is the same url like display after execute command  
@@ -176,8 +180,10 @@ In browser go to url 0.0.0.0/api:8080 and check if it is the same url like displ
    mvn jetty:run
    ```
    
-[![browser][browser]][browser]
-
+ <img src="images/browser.png" width="500"/>
+   
+<!-- [![browser][browser]][browser]
+ -->
 
 Next step is to run the Jmeter framework with rest api server url and Jmeter config file
    ```sh
