@@ -131,7 +131,8 @@ Apache Maven project build tools is need. <br />
    mvn test
    ```
 
-[![test_summary][test_summary]][test_summary]
+<!-- [![test_summary][test_summary]][test_summary] -->
+<img src="images/test_summary.png" width="500"/>
 
 
 <!-- USAGE EXAMPLES -->
@@ -143,7 +144,8 @@ After hit command
    ```
 it is posiible to verify description of Behaviour Driven Development tests into command line output.
 
-[![test_description][test_description]][test_description]
+<img src="images/test_description.png" width="500"/>
+<!-- [![test_description][test_description]][test_description]  -->
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
