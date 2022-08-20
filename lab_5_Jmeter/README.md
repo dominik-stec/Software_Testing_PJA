@@ -191,7 +191,9 @@ Next step is to run the Jmeter framework with rest api server url and Jmeter con
    ./jmeter -n -t ../../TAU_lab4_JMeter.jmx -l log.jtl -H 0.0.0.0/api -P 8080
    ```
 
-[![summary][summary]][summary]
+<img src="images/summary.png" width="500"/>
+
+<!-- [![summary][summary]][summary] -->
 
 After run tests into command line output it is possible to see summary of measurements regarding efficiency.
 
