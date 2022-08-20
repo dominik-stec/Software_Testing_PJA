@@ -289,7 +289,7 @@ Project URL:
 [jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
 [jmeter-url]: https://jmeter.apache.org/
 
-[server_run]: images/server_run.png|width=50
+[server_run]: images/server_run.png =50x50
 [client_run]: images/client_run.png
 [client]: images/client.png
 [jetty_run]: images/jetty_run.png
