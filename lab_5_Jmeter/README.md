@@ -154,7 +154,9 @@ Eclipse Jetty server with web container is need. <br />
 
 <!-- [![server_run][server_run]][server_run] -->
 
-[![client_run][client_run]][client_run]
+<!-- [![client_run][client_run]][client_run] -->
+
+<img src="images/client_run.png" width="500"/>
 
 <img src="images/client.png" width="500"/>
 
