@@ -84,7 +84,6 @@
 ### Built With
 
 This project use technology below.
-[<img src="images/server_run.png" width="250"/>]
 * [![jmeter][jmeter-shield]][jmeter-url]
 * [![maven][maven-shield]][maven-url]
 * [![jetty][jetty-shield]][jetty-url]
@@ -151,8 +150,9 @@ Eclipse Jetty server with web container is need. <br />
    mv hsqldb.jar ./apache-jmeter-5.2.1/lib/ 
    ```
 
+<img src="images/server_run.png" width="400"/>
 
-[![server_run][server_run]][server_run]
+<!-- [![server_run][server_run]][server_run] -->
 
 [![client_run][client_run]][client_run]
 
