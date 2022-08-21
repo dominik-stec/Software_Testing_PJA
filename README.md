@@ -92,6 +92,7 @@ This project use technology below.
 * [![cucumber][cucumber-shield]][cucumber-url]
 * [![jmeter][jmeter-shield]][jmeter-url]
 * [![jetty][jetty-shield]][jetty-url]
+* [![selenium][selenium-shield]][selenium-url]
 
 
 <!-- GETTING STARTED -->
@@ -217,3 +218,5 @@ Project URL:
 [jetty-url]: https://www.eclipse.org/jetty/
 [jmeter-shield]: https://img.shields.io/badge/-Jmeter-blue
 [jmeter-url]: https://jmeter.apache.org/
+[selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
+[selenium-url]: https://www.selenium.dev/
