@@ -142,14 +142,14 @@ Run selenium tests
 
 In Chrome web browser starts automatic tests which execute different cases of operations on graphics user interface for find bugs into user side usage application.
    
- <img src="images/browser.png" width="500"/>
+ <img src="images/test_example.png" width="500"/>
    
 <!-- [![browser][browser]][browser]
  -->
 
 When tests will end without fails we can see tests pass summary into command line.
 
-<img src="images/summary.png" width="500"/>
+<img src="images/test_cmd.png" width="500"/>
 
 <!-- [![summary][summary]][summary] -->
 
