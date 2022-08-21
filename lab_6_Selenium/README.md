@@ -79,14 +79,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I tested efficiency with Apache JMeter library. This test checks simple rest api under stress controled by framework. </p>
+<p> In this project I used Selenium web driver for test graphic user interface in web application. </p>
 
 ### Built With
 
 This project use technology below.
-* [![jmeter][jmeter-shield]][jmeter-url]
+* [![selenium][selenium-shield]][selenium-url]
 * [![maven][maven-shield]][maven-url]
-* [![jetty][jetty-shield]][jetty-url]
 
 
 <!-- GETTING STARTED -->
@@ -97,9 +96,8 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-JMeter framework to load test functional behavior and measure performance is need. <br />
+Selenium web driver for automatic graphics interface tests use cases is need. <br />
 Apache Maven project build tools is need. <br />
-Eclipse Jetty server with web container is need. <br />
 
 * Maven
    ```sh
@@ -119,93 +117,42 @@ Eclipse Jetty server with web container is need. <br />
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo with angular SPA and run this app according to instruction of installation from project page
    ```sh
-   git clone https://github.com/dccstcc/TAU_PJATK_practice.git
+   git clone https://github.com/dccstcc/BIU_PJATK.git
    ```
-2. Go to folder with HsqlDB server script and execute them
+2. Clone the repo with selenium tests cases
    ```sh
-   cd lab_5_Jmeter/restdemo/scripts
-   chmod 777 ./server.sh
-   ./server.sh &
+   git clone https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium.git
    ```
-   Pay attention to PID of running server
-   
-3. Go to folder with HsqlDB client script and execute them
+3. Go to catalog with selenium maven project
    ```sh
-   cd lab_5_Jmeter/restdemo/scripts
-   chmod 777 ./client.sh
-   ./client.sh &   
-   ```
-   
-4. Unzip JMeter library
-   ```sh
-   cd lab_5_Jmeter/
-   gzip -d apache-jmeter-5.2.1.zip
-   ./client.sh &   
-   ```
-
-5. Move hsqldb.jar to jmeter lib
-   ```sh
-   mv hsqldb.jar ./apache-jmeter-5.2.1/lib/ 
-   ```
-
- <img src="images/server_run.png" width="500"/>
-
-<!-- [![server_run][server_run]][server_run] -->
-
-<!-- [![client_run][client_run]][client_run] -->
-
-<img src="images/client_run.png" width="500"/>
-
-<img src="images/client.png" width="500"/>
-
-<!-- [![client][client]][client] -->
-
-
+   cd new
+   ```   
+  
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run rest api service built with cooperation with HsqlDB database and Jetty web container.  
+Run selenium tests
    ```sh
-   mvn jetty:run
+   mvn test
    ```
 
- <img src="images/jetty_run.png" width="500"/>
 
-<!-- [![jetty_run][jetty_run]][jetty_run] -->
-
-
-In browser go to url 0.0.0.0/api:8080 and check if it is the same url like display after execute command  
-   ```sh
-   mvn jetty:run
-   ```
+In Chrome web browser starts automatic tests which execute different cases of operations on graphics user interface for find bugs into user side usage application.
    
  <img src="images/browser.png" width="500"/>
    
 <!-- [![browser][browser]][browser]
  -->
 
-Next step is to run the Jmeter framework with rest api server url and Jmeter config file
-   ```sh
-   cd ./apache-jmeter-5.2.1/
-   ./jmeter -n -t ../../TAU_lab4_JMeter.jmx -l log.jtl -H 0.0.0.0/api -P 8080
-   ```
+When tests will end without fails we can see tests pass summary into command line.
 
 <img src="images/summary.png" width="500"/>
 
 <!-- [![summary][summary]][summary] -->
 
-After run tests into command line output it is possible to see summary of measurements regarding efficiency.
-
-For exit rest service maintained by Jetty just hit <br />
-`CTRL+C`
-
-Now we can exit database server by use server PID system number
-   ```sh
-   kill #PID#
-   ```
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -299,6 +246,8 @@ Project URL:
 [jetty-url]: https://www.eclipse.org/jetty/
 [jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
 [jmeter-url]: https://jmeter.apache.org/
+[selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
+[selenium-url]: https://www.selenium.dev/
 
 [server_run]: images/server_run.png 
 [client_run]: images/client_run.png
