@@ -35,7 +35,7 @@
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_5_Jmeter"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium/new"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
