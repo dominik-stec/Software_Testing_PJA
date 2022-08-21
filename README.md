@@ -115,8 +115,9 @@ Maven project management library is need. <br />
 
 3. [Jmeter](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_5_Jmeter)
 
-4. next
+4. [Selenium](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium) 
 
+5. next
 
 
 <!-- USAGE EXAMPLES -->
