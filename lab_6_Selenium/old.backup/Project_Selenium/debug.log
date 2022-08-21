@@ -1,0 +1,2 @@
+[0201/041202.729:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0201/041202.731:ERROR:exception_snapshot_win.cc(98)] thread ID 220956 not found in process
