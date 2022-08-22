@@ -264,7 +264,7 @@ Project URL:
 [jmeter-url]: https://jmeter.apache.org/
 [selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
 [selenium-url]: https://www.selenium.dev/
-[robotframework-shield]: https://img.shields.io/badge/-Selenium-black
+[robotframework-shield]: https://img.shields.io/badge/-Robot-black
 [robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
 [python-url]: https://www.python.org/
