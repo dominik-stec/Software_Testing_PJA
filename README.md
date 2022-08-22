@@ -93,7 +93,8 @@ This project use technology below.
 * [![jmeter][jmeter-shield]][jmeter-url]
 * [![jetty][jetty-shield]][jetty-url]
 * [![selenium][selenium-shield]][selenium-url]
-
+* [![robotframework][robotframework-shield]][robotframework-url]
+* [![python][python-shield]][python-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -117,7 +118,7 @@ Maven project management library is need. <br />
 
 4. [Selenium](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium) 
 
-5. next
+5. [Robot](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot)
 
 
 <!-- USAGE EXAMPLES -->
@@ -221,3 +222,8 @@ Project URL:
 [jmeter-url]: https://jmeter.apache.org/
 [selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
 [selenium-url]: https://www.selenium.dev/
+
+[robotframework-shield]: https://img.shields.io/badge/-Robot-black
+[robotframework-url]: https://robotframework.org/
+[python-shield]: https://img.shields.io/badge/-Python-yellow
+[python-url]: https://www.python.org/
