@@ -197,7 +197,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder. Because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
+This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
 
 
 
@@ -243,7 +243,7 @@ Project URL:
 [issues-shield]: https://img.shields.io/github/issues/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [issues-url]: https://github.com/dccstcc/TAU_PJATK_practice/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
-[license-url]: https://github.com/dccstcc/TAU_PJATK_practice/blob/master/LICENSE.txt
+[license-url]: https://github.com/dccstcc/TAU_PJATK_practice/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
