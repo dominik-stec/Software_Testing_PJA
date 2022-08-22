@@ -107,6 +107,13 @@ Docker for build images is required. <br />
 JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
 Maven project management library is need. <br />
+Cucumber BDD test library is need. <br />
+Jmeter efficiency test library is need. <br />
+Jetty web container is need. <br />
+Selenium automation test library is need. <br />
+Robot test framework is need. <br />
+Python interpreter is need. <br />
+
 
 ### Projects
 
