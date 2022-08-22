@@ -265,7 +265,7 @@ Project URL:
 [selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
 [selenium-url]: https://www.selenium.dev/
 [robotframework-shield]: https://img.shields.io/badge/-Selenium-black
-[roborframework-url]: https://robotframework.org/
+[robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
 [python-url]: https://www.python.org/
 
