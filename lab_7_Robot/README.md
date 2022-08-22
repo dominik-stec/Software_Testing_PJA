@@ -84,7 +84,7 @@
 ### Built With
 
 This project use technology below.
-* [![roboframework][roborframework-shield]][robotframework-url]
+* [![robotframework][robotframework-shield]][robotframework-url]
 * [![python][python-shield]][python-url]
 
 <!-- GETTING STARTED -->
@@ -163,7 +163,7 @@ In Chrome web browser starts automatic tests which execute different cases of op
 <!-- [![browser][browser]][browser]
  -->
 
-When tests will end without fails we can see tests pass summary into command line.
+When tests will end with or without fails we can see tests pass summary into command line.
 
 <img src="images/test_cmd.png" width="500"/>
 
