@@ -35,7 +35,7 @@
   <p align="center">
     <h3> Testing technology subject in PJATK </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium/new"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot/Project_Robot_framework"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -79,14 +79,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I used Selenium web driver for test graphic user interface in web application. </p>
+<p> In this project I used Robot framework with web driver for test graphic user interface in web application. </p>
 
 ### Built With
 
 This project use technology below.
-* [![selenium][selenium-shield]][selenium-url]
-* [![maven][maven-shield]][maven-url]
-
+* [![roboframework][roborframework-shield]][robotframework-url]
+* [![python][python-shield]][python-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -96,48 +95,65 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-Selenium web driver for automatic graphics interface tests use cases is need. <br />
-Apache Maven project build tools is need. <br />
+Robot framework web driver for automatic graphics interface tests use cases is need. <br />
+Python with package intaller pip is need. <br />
+Google Chrome browser for run interface tests is need. <br />
 
-* Maven
+* Robot framework
    ```sh
-  mkdir ~/maven
-  cd ~/maven
-  https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-  tar xzvf apache-maven-3.8.6-bin.tar.gz
-  nano .bashrc
+  pip install robotframework
   ```
-  into .bashrc on the end of file paste:
-  ```sh
-  export M2_HOME=~/maven/apache-maven-3.8.6/bin/
-  export PATH=${M2_HOME}/bin:${PATH}
+
+* Selenium web driver
+   ```sh
+  pip install selenium
+  pip install robotframework-seleniumlibrary
   ```
-  hit `Ctrl+O` to save <br />
-  hit `Ctrl+X` to exit
 
 ### Installation
 
-1. Clone the repo with angular SPA and run this app according to instruction of installation from project page
+1. Install Chrome web driver
+
+For Ubuntu:
    ```sh
-   git clone https://github.com/dccstcc/BIU_PJATK.git
+   sudo apt install chromium-chromedriver
    ```
-2. Clone the repo with selenium tests cases
+   
+For Debian:
    ```sh
-   git clone https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium.git
+   sudo apt install chromium-driver
    ```
-3. Go to catalog with selenium maven project
+   
+For MacOS:
    ```sh
-   cd new
-   ```   
-  
+   brew install --cask chromedriver
+   ```
+   
+2. Navigate to path where your chromedriver file is located
+
+  For example:
+   ```sh
+   cd /usr/local/Caskroom/chromedriver 
+   ```
+   and run cmd:
+   ```sh
+   xattr -d com.apple.quarantine chromedriver 
+   ```
+   for allow robot to perform tests by use chrome
+
+3. Clone the repo with robot framework tests
+   ```sh
+   https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot.git
+   ```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run selenium tests
+Run robot framework
    ```sh
-   mvn test
-   ```
+   robot Project_Robot_framework
+   ```  
 
 
 In Chrome web browser starts automatic tests which execute different cases of operations on graphics user interface for find bugs into user side usage application.
@@ -248,6 +264,10 @@ Project URL:
 [jmeter-url]: https://jmeter.apache.org/
 [selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
 [selenium-url]: https://www.selenium.dev/
+[robotframework-shield]: https://img.shields.io/badge/-Selenium-black
+[roborframework-url]: https://robotframework.org/
+[python-shield]: https://img.shields.io/badge/-Python-yellow
+[python-url]: https://www.python.org/
 
 [server_run]: images/server_run.png 
 [client_run]: images/client_run.png
