@@ -21,7 +21,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dccstcc/TAU_PJATK_practice)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dominik-stec/Software_testing_PJA)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -128,7 +128,7 @@ Python interpreter is need. <br />
 
 ## How to use
 
-Under specified links are instructions which describe solutions how to use chosen test technology.
+Under specified links are instructions which describe solutions how to use the chosen test technology.
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
