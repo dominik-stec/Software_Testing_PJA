@@ -114,15 +114,15 @@ Python interpreter is need. <br />
 
 ### List of projects
 
-1. [JUnit, Mockito, Docker](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_1_3_JUnit_Mockito)
+1. [JUnit, Mockito, Docker](https://github.com/dominik-stec/Software_Testing_PJA/tree/main/1_JUnit_Mockito)
 
-2. [Cucumber](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_4_BDD)
+2. [Cucumber](https://github.com/dominik-stec/Software_Testing_PJA/tree/main/2_BDD)
 
-3. [Jmeter](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_5_Jmeter)
+3. [Jmeter](https://github.com/dominik-stec/Software_Testing_PJA/tree/main/3_Jmeter)
 
-4. [Selenium](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_6_Selenium)
+4. [Selenium](https://github.com/dominik-stec/Software_Testing_PJA/tree/main/4_Selenium)
 
-5. [Robot](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_7_Robot)
+5. [Robot](https://github.com/dominik-stec/Software_Testing_PJA/tree/main/5_Robot)
 
 <!-- USAGE EXAMPLES -->
 
