@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -15,13 +13,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -30,14 +28,14 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">TAU_PJATK_practice</h2>
+  <h2 align="center">Software Testing</h2>
 
   <p align="center">
-    <h3> Testing technology subject in PJATK </h3>
-    <br />
+    <h3> Efficiency testing with JMeter </h3>
+    <!-- <br />
     <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_5_Jmeter"><strong>» go to CODE »</strong></a>
-    <br />
-    <br />
+    <br /> -->
+    <!-- <br /> -->
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -46,54 +44,51 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#native-deploy">Native deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#how-to-use">How to use ?</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact with me</a></li>
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+## Project description
 
 <p> In this project I tested efficiency with Apache JMeter library. This test checks simple rest api under stress controled by framework. </p>
 
-### Built With
+### Libraries and frameworks
 
 This project use technology below.
-* [![jmeter][jmeter-shield]][jmeter-url]
-* [![maven][maven-shield]][maven-url]
-* [![jetty][jetty-shield]][jetty-url]
 
+- [![jmeter][jmeter-shield]][jmeter-url]
+- [![maven][maven-shield]][maven-url]
+- [![jetty][jetty-shield]][jetty-url]
 
 <!-- GETTING STARTED -->
-## Getting Started
+
+## Native deploy
 
 This is instructions on setting up this project locally.
-
 
 ### Prerequisites
 
@@ -101,17 +96,17 @@ JMeter framework to load test functional behavior and measure performance is nee
 Apache Maven project build tools is need. <br />
 Eclipse Jetty server with web container is need. <br />
 
-* Maven
-   ```sh
+- Maven
+  ```sh
   mkdir ~/maven
   cd ~/maven
-  https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-  tar xzvf apache-maven-3.8.6-bin.tar.gz
+  curl -o apache-maven-3.9.2-bin.tar.gz https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
+  tar xzvf apache-maven-3.9.2-bin.tar.gz
   nano .bashrc
   ```
   into .bashrc on the end of file paste:
   ```sh
-  export M2_HOME=~/maven/apache-maven-3.8.6/bin/
+  export M2_HOME=~/maven/apache-maven-3.9.2/bin/
   export PATH=${M2_HOME}/bin:${PATH}
   ```
   hit `Ctrl+O` to save <br />
@@ -121,33 +116,32 @@ Eclipse Jetty server with web container is need. <br />
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/dccstcc/TAU_PJATK_practice.git
+   git clone https://github.com/dominik-stec/Software_Testing_PJA.git
    ```
 2. Go to folder with HsqlDB server script and execute them
    ```sh
-   cd lab_5_Jmeter/restdemo/scripts
+   cd 3_Jmeter/restdemo/scripts
    chmod 777 ./server.sh
    ./server.sh &
    ```
    Pay attention to PID of running server
-   
 3. Go to folder with HsqlDB client script and execute them
    ```sh
-   cd lab_5_Jmeter/restdemo/scripts
+   cd 3_Jmeter/restdemo/scripts
    chmod 777 ./client.sh
-   ./client.sh &   
+   ./client.sh &
    ```
-   
 4. Unzip JMeter library
+
    ```sh
-   cd lab_5_Jmeter/
+   cd 3_Jmeter/
    gzip -d apache-jmeter-5.2.1.zip
-   ./client.sh &   
+   ./client.sh &
    ```
 
 5. Move hsqldb.jar to jmeter lib
    ```sh
-   mv hsqldb.jar ./apache-jmeter-5.2.1/lib/ 
+   mv hsqldb.jar ./apache-jmeter-5.2.1/lib/
    ```
 
  <img src="images/server_run.png" width="500"/>
@@ -162,36 +156,37 @@ Eclipse Jetty server with web container is need. <br />
 
 <!-- [![client][client]][client] -->
 
-
-
 <!-- USAGE EXAMPLES -->
-## Usage
 
-Run rest api service built with cooperation with HsqlDB database and Jetty web container.  
-   ```sh
-   mvn jetty:run
-   ```
+## How to use
+
+Run rest api service built with cooperation with HsqlDB database and Jetty web container.
+
+```sh
+mvn jetty:run
+```
 
  <img src="images/jetty_run.png" width="500"/>
 
 <!-- [![jetty_run][jetty_run]][jetty_run] -->
 
+In browser go to url 0.0.0.0/api:8080 and check if it is the same url like display after execute command
 
-In browser go to url 0.0.0.0/api:8080 and check if it is the same url like display after execute command  
-   ```sh
-   mvn jetty:run
-   ```
-   
+```sh
+mvn jetty:run
+```
+
  <img src="images/browser.png" width="500"/>
    
 <!-- [![browser][browser]][browser]
  -->
 
 Next step is to run the Jmeter framework with rest api server url and Jmeter config file
-   ```sh
-   cd ./apache-jmeter-5.2.1/
-   ./jmeter -n -t ../../TAU_lab4_JMeter.jmx -l log.jtl -H 0.0.0.0/api -P 8080
-   ```
+
+```sh
+cd ./apache-jmeter-5.2.1/
+./jmeter -n -t ../../TAU_lab4_JMeter.jmx -l log.jtl -H 0.0.0.0/api -P 8080
+```
 
 <img src="images/summary.png" width="500"/>
 
@@ -203,22 +198,21 @@ For exit rest service maintained by Jetty just hit <br />
 `CTRL+C`
 
 Now we can exit database server by use server PID system number
-   ```sh
-   kill #PID#
-   ```
+
+```sh
+kill #PID#
+```
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-
-
-<!-- ROADMAP 
+<!-- ROADMAP
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 -->
 
-<!-- CONTRIBUTING 
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -232,26 +226,26 @@ Contributions are what make the open source community such an amazing place to l
 -->
 
 <!-- LICENSE -->
+
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
-
-
+This project has not a license.
+All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects which I realised are private conception from PJATK studies.
+See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
-Dominik Stec - dccstcc@gmail.com
+Dominik Stec - dominikstec@devapp.tools
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project URL: 
+Project URL:
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`https://github.com/dominik-stec/Software_Testing_PJA`
 
-
-
-<!-- ACKNOWLEDGEMENTS 
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -267,10 +261,9 @@ Project URL:
 
 -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [contributors-url]: https://github.com/dccstcc/TAU_PJATK_practice/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
@@ -284,7 +277,6 @@ Project URL:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
-
 [junit-shield]: https://img.shields.io/badge/-JUnit-green
 [junit-url]: https://junit.org/junit5/
 [mockito-shield]: https://img.shields.io/badge/-Mockito-red
@@ -299,13 +291,9 @@ Project URL:
 [jetty-url]: https://www.eclipse.org/jetty/
 [jmeter-shield]: https://img.shields.io/badge/-Jmeter-green
 [jmeter-url]: https://jmeter.apache.org/
-
-[server_run]: images/server_run.png 
+[server_run]: images/server_run.png
 [client_run]: images/client_run.png
 [client]: images/client.png
 [jetty_run]: images/jetty_run.png
 [browser]: images/browser.png
 [summary]: images/summary.png
-
-
-
