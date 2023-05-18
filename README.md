@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -15,6 +13,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -31,14 +30,14 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">TAU_PJATK_practice</h2>
+  <h2 align="center">Software Testing</h2>
 
   <p align="center">
-    <h3> Testing technology subject in PJATK </h3>
-    <br />
+    <h3> Testowanie Automatyczne (TAU) lecture module in PJATK </h3>
+    <!-- <br />
     <a href="https://github.com/dccstcc/TAU_PJATK_practice"><strong>» go to CODE »</strong></a>
     <br />
-    <br />
+    <br /> -->
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -47,59 +46,58 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Native-deploy">Native deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#List-of-projects">List of projects</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#How-to-use">How to use ?</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact with me</a></li>
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
-<p> In this project I use different technologies for test software. </p>
+## Project description
 
-### Built With
+<p> In these projects I use different technologies to testing a software. </p>
+
+### Libraries and frameworks
 
 This project use technology below.
-* [![docker][docker-shield]][docker-url]
-* [![junit][junit-shield]][junit-url]
-* [![mockito][mockito-shield]][mockito-url]
-* [![maven][maven-shield]][maven-url]
-* [![cucumber][cucumber-shield]][cucumber-url]
-* [![jmeter][jmeter-shield]][jmeter-url]
-* [![jetty][jetty-shield]][jetty-url]
-* [![selenium][selenium-shield]][selenium-url]
-* [![robotframework][robotframework-shield]][robotframework-url]
-* [![python][python-shield]][python-url]
+
+- [![docker][docker-shield]][docker-url]
+- [![junit][junit-shield]][junit-url]
+- [![mockito][mockito-shield]][mockito-url]
+- [![maven][maven-shield]][maven-url]
+- [![cucumber][cucumber-shield]][cucumber-url]
+- [![jmeter][jmeter-shield]][jmeter-url]
+- [![jetty][jetty-shield]][jetty-url]
+- [![selenium][selenium-shield]][selenium-url]
+- [![robotframework][robotframework-shield]][robotframework-url]
+- [![python][python-shield]][python-url]
 
 <!-- GETTING STARTED -->
-## Getting Started
 
-Bottom links describe each technology I used for test code in projected software.
+## Native deploy
+
+Bottom links describe each technology which I used for test a code into projected software.
 
 ### Prerequisites
 
@@ -114,37 +112,34 @@ Selenium automation test library is need. <br />
 Robot test framework is need. <br />
 Python interpreter is need. <br />
 
+### List of projects
 
-### Projects
+1. [JUnit, Mockito, Docker](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_1_3_JUnit_Mockito)
 
-1. [JUnit, Mockito, Docker](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito) 
+2. [Cucumber](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_4_BDD)
 
-2. [Cucumber](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_4_BDD)
+3. [Jmeter](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_5_Jmeter)
 
-3. [Jmeter](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_5_Jmeter)
+4. [Selenium](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_6_Selenium)
 
-4. [Selenium](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_6_Selenium) 
-
-5. [Robot](https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot)
-
+5. [Robot](https://github.com/dominik-stec/Software_Testing_PJA/tree/master/lab_7_Robot)
 
 <!-- USAGE EXAMPLES -->
-## Usage
 
-Under specified links are instructions which describe solutions how to use chose test technology.
+## How to use
+
+Under specified links are instructions which describe solutions how to use chosen test technology.
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-
-
-<!-- ROADMAP 
+<!-- ROADMAP
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 -->
 
-<!-- CONTRIBUTING 
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -158,27 +153,26 @@ Contributions are what make the open source community such an amazing place to l
 -->
 
 <!-- LICENSE -->
+
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies.
+This project has not a license.
+All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects which I realised are private conception from PJATK studies.
 See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
-Dominik Stec - dccstcc@gmail.com
+Dominik Stec - dominikstec@devapp.tools
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project URL: 
+Project URL:
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`https://github.com/dominik-stec/Software_Testing_PJA.git`
 
-
-
-<!-- ACKNOWLEDGEMENTS 
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -194,10 +188,9 @@ Project URL:
 
 -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [contributors-url]: https://github.com/dccstcc/TAU_PJATK_practice/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
@@ -211,7 +204,6 @@ Project URL:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
-
 [junit-shield]: https://img.shields.io/badge/-JUnit-green
 [junit-url]: https://junit.org/junit5/
 [mockito-shield]: https://img.shields.io/badge/-Mockito-red
@@ -220,7 +212,6 @@ Project URL:
 [docker-url]: https://www.docker.com/
 [maven-shield]: https://img.shields.io/badge/-Maven-white
 [maven-url]: https://maven.apache.org/
-
 [cucumber-shield]: https://img.shields.io/badge/-Cucumber-green
 [cucumber-url]: https://cucumber.io/
 [jetty-shield]: https://img.shields.io/badge/-Jetty-red
@@ -229,7 +220,6 @@ Project URL:
 [jmeter-url]: https://jmeter.apache.org/
 [selenium-shield]: https://img.shields.io/badge/-Selenium-yellow
 [selenium-url]: https://www.selenium.dev/
-
 [robotframework-shield]: https://img.shields.io/badge/-Robot-black
 [robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
