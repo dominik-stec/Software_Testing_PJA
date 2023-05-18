@@ -56,6 +56,7 @@
         <li><a href="#libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
+    <li><a href="#docker-deploy">Docker deploy</a></li>
     <li>
       <a href="#native-deploy">Native deploy</a>
       <ul>
@@ -86,6 +87,13 @@ This project use technology below.
 - [![maven][maven-shield]][maven-url]
 
 <!-- GETTING STARTED -->
+
+## Docker deploy
+
+```sh
+docker build -t 4_bdd:latest .
+docker run -it 4_bdd:latest
+```
 
 ## Native deploy
 
@@ -120,7 +128,7 @@ Apache Maven project build tools is need. <br />
    ```
 2. Go to folder with Maven project sources
    ```sh
-   cd lab_4_BDD
+   cd lab_4_BDD/TransportMachinesApp
    ```
 3. Run tests using Maven
    ```sh
