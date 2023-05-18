@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -15,6 +13,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -22,7 +21,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dccstcc/TAU_PJATK_practice)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/dominik-stec/Software_Testing_PJA?branch=master)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,14 +30,14 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">TAU_PJATK_practice</h2>
+  <h2 align="center">Software Testing</h2>
 
   <p align="center">
-    <h3> Testing technology subject in PJATK </h3>
-    <br />
+    <h3> Unit tests with JUnit and Mockito </h3>
+    <!-- <br />
     <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_1_3_JUnit_Mockito/"><strong>» go to CODE »</strong></a>
     <br />
-    <br />
+    <br /> -->
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -47,55 +46,52 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#docker-deploy">Docker deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#how-to-use">How to use ?</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact with me</a></li>
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
-<p> In this project I tested different cars marks factory. I used JUnit library for unit tests and Mockito library for mocking dependencies in cars factory. Project is maintain by Maven build tools. This tests run by Docker images. </p>
+## Project description
 
-### Built With
+<p> In this project I tested different cars marks factory. I used JUnit library for unit tests and Mockito library for mocking dependencies in cars factory. Project is maintain by Maven build tools. This tests run into Docker images. </p>
+
+### Libraries and frameworks
 
 This project use technology below.
-* [![docker][docker-shield]][docker-url]
-* [![junit][junit-shield]][junit-url]
-* [![mockito][mockito-shield]][mockito-url]
-* [![maven][maven-shield]][maven-url]
 
+- [![docker][docker-shield]][docker-url]
+- [![junit][junit-shield]][junit-url]
+- [![mockito][mockito-shield]][mockito-url]
+- [![maven][maven-shield]][maven-url]
 
 <!-- GETTING STARTED -->
-## Getting Started
+
+## Docker deploy
 
 This is instructions on setting up this project locally.
-
 
 ### Prerequisites
 
@@ -104,22 +100,22 @@ JUnit unit test framework for Java is need. <br />
 Mockito framework for use in JUnit stubs/mocks is need. <br />
 Apache Maven project build tools is need. <br />
 
-* Docker
+- Docker
   ```sh
   sudo apt-get install docker-engine -y
   sudo service docker start
   ```
-* Maven
-   ```sh
+- Maven
+  ```sh
   mkdir ~/maven
   cd ~/maven
-  https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-  tar xzvf apache-maven-3.8.6-bin.tar.gz
+  curl -o apache-maven-3.9.2-bin.tar.gz https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
+  tar xzvf apache-maven-3.9.2-bin.tar.gz
   nano .bashrc
   ```
   into .bashrc on the end of file paste:
   ```sh
-  export M2_HOME=~/maven/apache-maven-3.8.6/bin/
+  export M2_HOME=~/maven/apache-maven-3.9.2/bin/
   export PATH=${M2_HOME}/bin:${PATH}
   ```
   hit Ctrl+O to save <br />
@@ -151,14 +147,16 @@ Apache Maven project build tools is need. <br />
 <img src="images/build.png" width="500"/>
 <!-- [![build_docker_image][build]][build] -->
 
-
 <!-- USAGE EXAMPLES -->
-## Usage
+
+## How to use
 
 After hit command
-   ```sh
-   mvn test
-   ```
+
+```sh
+mvn test
+```
+
 it is posiible to verify number of tests and check if test pass or fail into command line output.
 
 <!-- [![run_docker_image][run]][run] -->
@@ -166,16 +164,14 @@ it is posiible to verify number of tests and check if test pass or fail into com
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-
-
-<!-- ROADMAP 
+<!-- ROADMAP
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 -->
 
-<!-- CONTRIBUTING 
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -189,26 +185,26 @@ Contributions are what make the open source community such an amazing place to l
 -->
 
 <!-- LICENSE -->
+
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
-
-
+This project has not a license.
+All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects which I realised are private conception from PJATK studies.
+See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
-Dominik Stec - dccstcc@gmail.com
+Dominik Stec - dominikstec@devapp.tools
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project URL: 
+Project URL:
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`https://github.com/dominik-stec/Software_Testing_PJA.git`
 
-
-
-<!-- ACKNOWLEDGEMENTS 
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -224,10 +220,9 @@ Project URL:
 
 -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [contributors-url]: https://github.com/dccstcc/TAU_PJATK_practice/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
@@ -241,7 +236,6 @@ Project URL:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
-
 [junit-shield]: https://img.shields.io/badge/-JUnit-green
 [junit-url]: https://junit.org/junit5/
 [mockito-shield]: https://img.shields.io/badge/-Mockito-red
@@ -250,8 +244,5 @@ Project URL:
 [docker-url]: https://www.docker.com/
 [maven-shield]: https://img.shields.io/badge/-Maven-white
 [maven-url]: https://maven.apache.org/
-
 [build]: images/build.png
 [run]: images/run.png
-
-
