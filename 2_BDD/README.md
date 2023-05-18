@@ -124,11 +124,11 @@ Apache Maven project build tools is need. <br />
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/dccstcc/TAU_PJATK_practice.git
+   git clone https://github.com/dominik-stec/Software_Testing_PJA.git
    ```
 2. Go to folder with Maven project sources
    ```sh
-   cd lab_4_BDD/TransportMachinesApp
+   cd 2_BDD/TransportMachinesApp
    ```
 3. Run tests using Maven
    ```sh
