@@ -53,11 +53,11 @@
     <li>
       <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#native-deploy">Native deploy</a></li>
+        <li><a href="#libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#libraries-and-frameworks">Libraries / Frameworks</a>
+      <a href="#native-deploy">Native deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -78,7 +78,7 @@
 
 <p> In this project I tested in Behaviour Driven Development methodology with Cucumber framework. I tested car factory project. </p>
 
-### Native deploy
+### Libraries and frameworks
 
 This project use technology below.
 
@@ -87,7 +87,7 @@ This project use technology below.
 
 <!-- GETTING STARTED -->
 
-## Libraries and frameworks
+## Native deploy
 
 This is instructions on setting up this project locally.
 
