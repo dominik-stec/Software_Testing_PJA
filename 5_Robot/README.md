@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -15,13 +13,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -30,14 +28,14 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">TAU_PJATK_practice</h2>
+  <h2 align="center">Software testing</h2>
 
   <p align="center">
-    <h3> Testing technology subject in PJATK </h3>
-    <br />
+    <h3> Testing Graphics User WEB Interfaces with Robot framework </h3>
+    <!-- <br />
     <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot/Project_Robot_framework"><strong>» go to CODE »</strong></a>
     <br />
-    <br />
+    <br /> -->
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -46,52 +44,50 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#native-deploy">Native deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#how-to-use">How to use ?</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact with me</a></li>
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+## Project description
 
 <p> In this project I used Robot framework with web driver for test graphic user interface in web application. </p>
 
-### Built With
+### Libraries and frameworks
 
 This project use technology below.
-* [![robotframework][robotframework-shield]][robotframework-url]
-* [![python][python-shield]][python-url]
+
+- [![robotframework][robotframework-shield]][robotframework-url]
+- [![python][python-shield]][python-url]
 
 <!-- GETTING STARTED -->
-## Getting Started
+
+## Native deploy
 
 This is instructions on setting up this project locally.
-
 
 ### Prerequisites
 
@@ -99,13 +95,14 @@ Robot framework web driver for automatic graphics interface tests use cases is n
 Python with package intaller pip is need. <br />
 Google Chrome browser for run interface tests is need. <br />
 
-* Robot framework
-   ```sh
+- Robot framework
+
+  ```sh
   pip install robotframework
   ```
 
-* Selenium web driver
-   ```sh
+- Selenium web driver
+  ```sh
   pip install selenium
   pip install robotframework-seleniumlibrary
   ```
@@ -115,49 +112,56 @@ Google Chrome browser for run interface tests is need. <br />
 1. Install Chrome web driver
 
 For Ubuntu:
-   ```sh
-   sudo apt install chromium-chromedriver
-   ```
-   
+
+```sh
+sudo apt install chromium-chromedriver
+```
+
 For Debian:
-   ```sh
-   sudo apt install chromium-driver
-   ```
-   
+
+```sh
+sudo apt install chromium-driver
+```
+
 For MacOS:
-   ```sh
-   brew install --cask chromedriver
-   ```
-   
+
+```sh
+brew install --cask chromedriver
+```
+
 2. Navigate to path where your chromedriver file is located
 
-  For example:
-   ```sh
-   cd /usr/local/Caskroom/chromedriver 
-   ```
-   and run cmd:
-   ```sh
-   xattr -d com.apple.quarantine chromedriver 
-   ```
-   for allow robot to perform tests by use chrome
+For example:
+
+```sh
+cd /usr/local/Caskroom/chromedriver
+```
+
+and run cmd:
+
+```sh
+xattr -d com.apple.quarantine chromedriver
+```
+
+for allow robot to perform tests by use chrome
 
 3. Clone the repo with robot framework tests
    ```sh
-   https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot.git
+   https://github.com/dominik-stec/Software_Testing_PJA.git
    ```
 
-
 <!-- USAGE EXAMPLES -->
-## Usage
+
+## How to use
 
 Run robot framework
-   ```sh
-   robot Project_Robot_framework
-   ```  
 
+```sh
+robot Project_Robot_framework
+```
 
 In Chrome web browser starts automatic tests which execute different cases of operations on graphics user interface for find bugs into user side usage application.
-   
+
  <img src="images/test_example.png" width="500"/>
    
 <!-- [![browser][browser]][browser]
@@ -169,19 +173,16 @@ When tests will end with or without fails we can see tests pass summary into com
 
 <!-- [![summary][summary]][summary] -->
 
-
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-
-
-<!-- ROADMAP 
+<!-- ROADMAP
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 -->
 
-<!-- CONTRIBUTING 
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -195,26 +196,26 @@ Contributions are what make the open source community such an amazing place to l
 -->
 
 <!-- LICENSE -->
+
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
-
-
+This project has not a license.
+All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects which I realised are private conception from PJATK studies.
+See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
-Dominik Stec - dccstcc@gmail.com
+Dominik Stec - dominikstec@devapp.tools
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project URL: 
+Project URL:
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`https://github.com/dominik-stec/Software_Testing_PJA.git`
 
-
-
-<!-- ACKNOWLEDGEMENTS 
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -230,10 +231,9 @@ Project URL:
 
 -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [contributors-url]: https://github.com/dccstcc/TAU_PJATK_practice/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
@@ -247,7 +247,6 @@ Project URL:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
-
 [junit-shield]: https://img.shields.io/badge/-JUnit-green
 [junit-url]: https://junit.org/junit5/
 [mockito-shield]: https://img.shields.io/badge/-Mockito-red
@@ -268,13 +267,9 @@ Project URL:
 [robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
 [python-url]: https://www.python.org/
-
-[server_run]: images/server_run.png 
+[server_run]: images/server_run.png
 [client_run]: images/client_run.png
 [client]: images/client.png
 [jetty_run]: images/jetty_run.png
 [browser]: images/browser.png
 [summary]: images/summary.png
-
-
-
